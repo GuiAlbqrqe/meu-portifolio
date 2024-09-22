@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap');
+
+/* Estilo geral do nav */
+nav {
+
+    color: rgb(100, 98, 98);
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../Portifólio/assets/paper.png'); /* textura */
+    background-size: cover; /* Cobre toda a tela */
+    background-repeat: no-repeat; /* Não repete */
+    background-attachment: fixed; /* Mantém a textura fixa ao rolar a página */
+    background-color: rgba(255, 255, 255, 0.9); /* Adiciona uma camada semi-transparente branca por cima */
+}
+
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+section {
+    padding: 60px 20px; /* Aumenta o espaçamento entre seções */
+}
+
+/* Estilo do menu */
+.menu {
+    color: #000000;
+    font-size: 1.25rem; /* Use rem para tamanhos de texto */
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5%;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menu:hover {
+    color: rgb(255, 68, 0);
+    animation: pulsar 1.5 infinite;
+    background-color: #edeef0;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.25s;
+
+}
+
+.titulo-pagina {
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Usa Poppins para títulos */
+    font-size: 2rem; /* Responsivo ao invés de 20px */
+}
+
+.div-imagem {
+    text-align: center;
+}
+
+.imagem-pagina {
+    width: 50%; /* Responsivo, se ajusta com a largura da página */
+    max-width: 300px; /* Limite de tamanho */
+    border-radius: 50%; /* Correção: 50% faz um círculo perfeito */
+    transition: transform 0.3s ease; /* Animação suave para imagem */
+}
+
+.imagem-pagina:hover {
+    transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */
+}
+
+.imagem-pagina-projetos {
+    width: 100%; /* Responsivo */
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.sobre-mim {
+    text-align: center;
+    background-color: #fff;
+    padding: 5%; /* Padding flexível */
+    box-shadow: 0 8px 16px black;
+    border-radius: 20px; /* Bordas mais arredondadas */
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tecnologias {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    display: flex; /* Utiliza flexbox para alinhar horizontalmente */
+    justify-content: center; /* Centraliza a lista */
+    gap: 20px; /* Espaçamento entre os itens da lista */
+}
+
+.tecnologias li {
+    display: flex; /* Para alinhar ícone e texto juntos */
+    align-items: center; /* Centraliza verticalmente o ícone e o texto */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte para os ícones e texto */
+}
+
+.tecnologias li i {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    font-size: 2rem; /* Ajusta o tamanho dos ícones */
+}
+
+/* Cores originais dos ícones */
+.tecnologias li .fa-python {
+    color: #306998; /* Cor original do Python */
+}
+
+.tecnologias li .fa-js {
+    color: #F0DB4F; /* Cor original do Javascript */
+}
+
+.tecnologias li .fa-html5 {
+    color: #E34F26; /* Cor original do HTML5 */
+}
+
+.tecnologias li .fa-css3-alt {
+    color: #1572B6; /* Cor original do CSS3 */
+}
+
+.tecnologias li img {
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    vertical-align: middle;
+}
+
+/* Estilo da tabela e container do portfólio */
+.portfolio-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 5%; /* Padding flexível */
+    box-shadow: 0 8px 16px black;
+    border-radius: 20px; /* Bordas mais arredondadas */
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #444;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #3e3f41;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+td a {
+    color: #4b4d4e;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+td a:hover {
+    color: #f38507;
+    text-decoration: underline;
+}
+
+tr:hover {
+    background-color: #b0b2b3;
+    transition: background-color 0.3s;
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 768px) {
+    table, th, td {
+        font-size: 0.9em;
+    }
+    .portfolio-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu {
+        display: block; /* Itens em bloco para telas menores */
+        margin: 10px 0;
+    }
+    
+    .imagem-pagina, .imagem-pagina-projetos {
+        width: 80%; /* Redimensiona a imagem */
+    }
+    
+    h1 {
+        font-size: 1.5rem; /* Diminui o título para telas menores */
+    }
+    
+    th, td {
+        padding: 10px;
+    }
+}
+
+/* Estilo dos ícones */
+.icone, .icone2, .icone3 {
+    width: 10vw; /* Responsivo: largura relativa à viewport */
+    max-width: 60px; /* Limite de tamanho */
+}
+
+/* Estilo do footer */
+footer {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/paper.png');
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px; /* Mais espaçamento no footer */
+    margin-top: 40px; /* Espaço maior entre o conteúdo e o footer */
+    font-size: 14px; /* Tamanho da fonte mais confortável */
+}
+
+/* Layout em grid para projetos */
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Espaço entre os itens do grid */
+}
+
+/* Layout em grid para contatos */
+.contatos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth; /* Scroll suave ao navegar entre seções */
+}
+
+/* Botão de Call to Action */
+.button {
+    background-color: #f85c50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e14b3d; /* Cor ao passar o mouse */
+}
