@@ -4,54 +4,61 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Meus Contatos</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="nav-menu">
                 <li class="menu" onclick="sobre()">Sobre mim</li>
                 <li class="menu" onclick="projetos()">Projetos</li>
                 <li class="menu" onclick="contatos()">Contatos</li>
             </ul>
         </nav>
     </header>
+
     <main>
         <h1 class="titulo-pagina">Meus contatos</h1>
         <hr>
         <div class="portfolio-container">
-            <table>
-              <tr>
-                  <th>Redes Sociais</th>
-                  <th>Acesse aqui!</th>
-              </tr>
-              <tr>
-                  <td><img class="icone" src="./assets/linkedin.png" alt="LinkedIn"></td>
-                  <td><a href="https://www.linkedin.com/in/guialbqrqe/">Tem vaga? Clique aqui!</a></td>
-              </tr>
-              <tr>
-                  <td><img class="icone2" src="./assets/GitHub.png" alt="GitHub"></td>
-                  <td><a href="https://github.com/GuiAlbqrqe">Meus Repositórios? Vem ver!</a></td>
-                </tr>
-                <tr>
-                    <td><img class="icone" src="./assets/instagram.png" alt="Instagram"></td>
-                    <td><a href="https://www.instagram.com/guialbqrqe/">Quer obter orçamentos? Clique aqui!</a></td>
-                </tr>
-                <tr>
-                    <td><img class="icone3" src="./assets/Whatsapp.png" alt="Whatsapp"></td>
-                    <td><a href="https://wa.me/5581998384483?text=Olá!+Queria+fazer+um+orçamento.">Não te respondi no instagram? Clique aqui!</a></td>
-                </tr>
-                <tr>
-                    <td><img class="icone3" src="./assets/Discord.png" alt="Whatsapp"></td>
-                    <td><a href="https://discord.com/invite/tWfWSYKh">Quer me encontrar no Discord? Clique aqui!</a></td>
-                </tr>
-          </table>  
-          </div>
+            <table class="contatos-table">
+                <thead>
+                  <tr>
+                      <th>Redes Sociais</th>
+                      <th>Acesse aqui!</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                      <td><img class="icone" src="./assets/linkedin.png" alt="LinkedIn"></td>
+                      <td><a href="https://www.linkedin.com/in/guialbqrqe/" target="_blank">Tem vaga? Clique aqui!</a></td>
+                  </tr>
+                  <tr>
+                      <td><img class="icone" src="./assets/GitHub.png" alt="GitHub"></td>
+                      <td><a href="https://github.com/GuiAlbqrqe" target="_blank">Meus Repositórios? Vem ver!</a></td>
+                  </tr>
+                  <tr>
+                      <td><img class="icone" src="./assets/instagram.png" alt="Instagram"></td>
+                      <td><a href="https://www.instagram.com/guialbqrqe/" target="_blank">Quer obter orçamentos? Clique aqui!</a></td>
+                  </tr>
+                  <tr>
+                      <td><img class="icone" src="./assets/Whatsapp.png" alt="Whatsapp"></td>
+                      <td><a href="https://wa.me/5581998384483?text=Olá!+Queria+fazer+um+orçamento." target="_blank">Não te respondi no Instagram? Clique aqui!</a></td>
+                  </tr>
+                  <tr>
+                      <td><img class="icone" src="./assets/Discord.png" alt="Discord"></td>
+                      <td><a href="https://discord.com/invite/tWfWSYKh" target="_blank">Quer me encontrar no Discord? Clique aqui!</a></td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
-    <hr>
+
     <footer>
-        <p>Todos os direitos reservados!</p>
+        <p>Todos os direitos reservados &copy; 2024</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu Portifólio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
@@ -17,54 +20,78 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <h1 class="titulo-pagina">Guilherme Albuquerque</h1>
       <hr />
       <div class="div-imagem">
-        <img class="imagem-pagina" src="assets/programador.jpg" alt="Programador" />
+        <img
+          class="imagem-pagina"
+          src="assets/programador.jpg"
+          alt="Programador"
+          onclick="toggleBox()"
+        />
       </div>
-      <br />
-      <div class="sobre-mim">
+      <p class="instrucao animacao-texto">
+        <strong>⬇ Toque na imagem para exibir minhas informações ⬇</strong>
+      </p>
+
+      <div id="sobreMim" class="sobre-mim oculto">
         <p>
           Olá, meu nome é Guilherme e sou estudante de Análise e Desenvolvimento
-          de Sistemas. Sou fullstack. Apaixonado por tecnologia e inovação, estou sempre em
-          busca de aprimorar minhas habilidades e transformar ideias em
-          realidade. Atualmente, estou desenvolvendo meu portfólio, onde irei
-          compartilhar os projetos que venho criando ao longo da minha jornada
-          acadêmica e pessoal. A cada novo desafio, vejo uma oportunidade de
-          aprender e crescer como programador, e meu objetivo é que esse espaço
-          sirva como uma vitrine para mostrar toda a minha evolução no mundo do
-          desenvolvimento de software. Fique à vontade para explorar meus
-          projetos e acompanhar meu progresso!
+          de Sistemas. Sou fullstack. Apaixonado por tecnologia e inovação,
+          estou sempre em busca de aprimorar minhas habilidades e transformar
+          ideias em realidade. Atualmente, estou desenvolvendo meu portfólio,
+          onde irei compartilhar os projetos que venho criando ao longo da minha
+          jornada acadêmica e pessoal. A cada novo desafio, vejo uma
+          oportunidade de aprender e crescer como programador, e meu objetivo é
+          que esse espaço sirva como uma vitrine para mostrar toda a minha
+          evolução no mundo do desenvolvimento de software. Fique à vontade para
+          explorar meus projetos e acompanhar meu progresso!
         </p>
-        <br>
-        <p style="font-size: 30px;">Domino as seguintes linguagens:</p>
+        <p style="font-size: 30px">Domino as seguintes linguagens:</p>
         <ul class="tecnologias">
           <li>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" style="width: 40px;">
-              Python
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+              alt="Python Logo"
+              width="40"
+            />
+            Python
           </li>
           <li>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" style="width: 40px;">
-              JavaScript
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+              alt="JavaScript Logo"
+              width="40"
+            />
+            JavaScript
           </li>
           <li>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 Logo" style="width: 40px;">
-              HTML
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+              alt="HTML5 Logo"
+              width="40"
+            />
+            HTML
           </li>
           <li>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3 Logo" style="width: 40px;">
-              CSS
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+              alt="CSS3 Logo"
+              width="40"
+            />
+            CSS
           </li>
-      </ul>
-      
-      
+        </ul>
       </div>
     </main>
-    <hr>
+
+    <hr />
     <footer>
       <p>Todos os direitos reservados!</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>

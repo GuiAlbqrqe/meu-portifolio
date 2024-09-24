@@ -2,8 +2,8 @@
 
 /* Estilo geral do nav */
 nav {
-
     color: rgb(100, 98, 98);
+    border-radius: 20px;
     padding: 15px;
     text-align: center;
     width: 100%;
@@ -11,13 +11,12 @@ nav {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('../Portifólio/assets/paper.png'); /* textura */
-    background-size: cover; /* Cobre toda a tela */
-    background-repeat: no-repeat; /* Não repete */
-    background-attachment: fixed; /* Mantém a textura fixa ao rolar a página */
-    background-color: rgba(255, 255, 255, 0.9); /* Adiciona uma camada semi-transparente branca por cima */
+    background: linear-gradient(rgb(110, 110, 190),rgb(172, 168, 168)); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
 }
-
 
 h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
@@ -25,13 +24,14 @@ h1, h2, h3 {
 }
 
 section {
-    padding: 60px 20px; /* Aumenta o espaçamento entre seções */
+    padding: 60px 20px;
 }
 
 /* Estilo do menu */
 .menu {
     color: #000000;
-    font-size: 1.25rem; /* Use rem para tamanhos de texto */
+    border-radius: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     display: inline-block;
     margin-right: 5%;
@@ -41,21 +41,21 @@ section {
 
 .menu:hover {
     color: rgb(255, 68, 0);
-    animation: pulsar 1.5 infinite;
+    animation: pulsar 0.5s infinite;
     background-color: #edeef0;
     text-decoration: none;
-    padding: 0.5rem 0.75rem;
+    padding: 0.25rem 0.30rem;
     font-size: 18px;
     font-weight: 600;
     position: relative;
     transition: color 0.25s;
-
 }
 
 .titulo-pagina {
+    color: #000000;
     text-align: center;
-    font-family: 'Poppins', sans-serif; /* Usa Poppins para títulos */
-    font-size: 2rem; /* Responsivo ao invés de 20px */
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
 }
 
 .div-imagem {
@@ -63,18 +63,18 @@ section {
 }
 
 .imagem-pagina {
-    width: 50%; /* Responsivo, se ajusta com a largura da página */
-    max-width: 300px; /* Limite de tamanho */
-    border-radius: 50%; /* Correção: 50% faz um círculo perfeito */
-    transition: transform 0.3s ease; /* Animação suave para imagem */
+    width: 60%;
+    max-width: 350px;
+    border-radius: 60%;
+    transition: transform 0.3s ease;
 }
 
 .imagem-pagina:hover {
-    transform: scale(1.05); /* Aumenta levemente a imagem ao passar o mouse */
+    transform: scale(1.05);
 }
 
 .imagem-pagina-projetos {
-    width: 100%; /* Responsivo */
+    width: 100%;
     max-width: 400px;
     border-radius: 5px;
 }
@@ -82,52 +82,51 @@ section {
 .sobre-mim {
     text-align: center;
     background-color: #fff;
-    padding: 5%; /* Padding flexível */
+    padding: 5%;
     box-shadow: 0 8px 16px black;
-    border-radius: 20px; /* Bordas mais arredondadas */
+    border-radius: 20px;
     width: 80%;
     max-width: 900px;
     margin: 0 auto;
 }
 
 .tecnologias {
-    list-style: none; /* Remove os marcadores da lista */
+    list-style: none;
     padding: 0;
-    display: flex; /* Utiliza flexbox para alinhar horizontalmente */
-    justify-content: center; /* Centraliza a lista */
-    gap: 20px; /* Espaçamento entre os itens da lista */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .tecnologias li {
-    display: flex; /* Para alinhar ícone e texto juntos */
-    align-items: center; /* Centraliza verticalmente o ícone e o texto */
-    font-size: 1.2rem; /* Aumenta o tamanho da fonte para os ícones e texto */
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
 }
 
 .tecnologias li i {
-    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
-    font-size: 2rem; /* Ajusta o tamanho dos ícones */
+    margin-right: 10px;
+    font-size: 2rem;
 }
 
-/* Cores originais dos ícones */
 .tecnologias li .fa-python {
-    color: #306998; /* Cor original do Python */
+    color: #306998;
 }
 
 .tecnologias li .fa-js {
-    color: #F0DB4F; /* Cor original do Javascript */
+    color: #F0DB4F;
 }
 
 .tecnologias li .fa-html5 {
-    color: #E34F26; /* Cor original do HTML5 */
+    color: #E34F26;
 }
 
 .tecnologias li .fa-css3-alt {
-    color: #1572B6; /* Cor original do CSS3 */
+    color: #1572B6;
 }
 
 .tecnologias li img {
-    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+    margin-right: 10px;
     vertical-align: middle;
 }
 
@@ -135,9 +134,9 @@ section {
 .portfolio-container {
     text-align: center;
     background-color: #fff;
-    padding: 5%; /* Padding flexível */
+    padding: 5%;
     box-shadow: 0 8px 16px black;
-    border-radius: 20px; /* Bordas mais arredondadas */
+    border-radius: 20px;
     width: 80%;
     max-width: 900px;
     margin: 0 auto;
@@ -204,18 +203,18 @@ tr:hover {
 
 @media (max-width: 576px) {
     .menu {
-        display: block; /* Itens em bloco para telas menores */
+        display: block;
         margin: 10px 0;
     }
-    
+
     .imagem-pagina, .imagem-pagina-projetos {
-        width: 80%; /* Redimensiona a imagem */
+        width: 80%;
     }
-    
+
     h1 {
-        font-size: 1.5rem; /* Diminui o título para telas menores */
+        font-size: 1.5rem;
     }
-    
+
     th, td {
         padding: 10px;
     }
@@ -223,8 +222,8 @@ tr:hover {
 
 /* Estilo dos ícones */
 .icone, .icone2, .icone3 {
-    width: 10vw; /* Responsivo: largura relativa à viewport */
-    max-width: 60px; /* Limite de tamanho */
+    width: 10vw;
+    max-width: 60px;
 }
 
 /* Estilo do footer */
@@ -235,16 +234,16 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 20px; /* Mais espaçamento no footer */
-    margin-top: 40px; /* Espaço maior entre o conteúdo e o footer */
-    font-size: 14px; /* Tamanho da fonte mais confortável */
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
 }
 
 /* Layout em grid para projetos */
 .projetos-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px; /* Espaço entre os itens do grid */
+    gap: 20px;
 }
 
 /* Layout em grid para contatos */
@@ -256,7 +255,7 @@ footer {
 
 /* Scroll suave */
 html {
-    scroll-behavior: smooth; /* Scroll suave ao navegar entre seções */
+    scroll-behavior: smooth;
 }
 
 /* Botão de Call to Action */
@@ -267,9 +266,25 @@ html {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease;
 }
 
 .button:hover {
-    background-color: #e14b3d; /* Cor ao passar o mouse */
+    background-color: #e14b3d;
+}
+
+.oculto {
+    display: none;
+}
+
+.sobre-mim.visivel {
+    display: block;
+}
+
+.instrucao {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
 }
