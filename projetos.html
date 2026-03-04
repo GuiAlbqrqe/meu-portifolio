@@ -1,74 +1,599 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meus Projetos</title>
+    <title>Projetos | Guilherme Albuquerque</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li class="menu" onclick="sobre()">Sobre mim</li>
-          <li class="menu" onclick="projetos()">Projetos</li>
-          <li class="menu" onclick="contatos()">Contatos</li>
+    <div class="bg-shape bg-shape-1"></div>
+    <div class="bg-shape bg-shape-2"></div>
+
+    <header class="site-header">
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li><a class="menu" href="index.html">Sobre</a></li>
+          <li><a class="menu active" href="projetos.html">Projetos</a></li>
+          <li><a class="menu" href="contatos.html">Contato</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1 class="titulo-pagina">Projetos</h1>
-      <hr />
-      <div class="projetos-container">
-        <table>
-          <tr>
-            <th>Nome do projeto</th>
-            <th>Descrição do projeto</th>
-          </tr>
-          <tr>
-            <td>
-              <p>Cadastro de clientes com streamlit</p>
-              <video width="400" height="250" controls>
-                <source src="./assets/Cadastro.mp4" type="video/mp4" />
-              </video>
-              <a href="https://github.com/GuiAlbqrqe/Cadastro-Cliente-Streamlit"
-                ><p>Link do Projeto de Cadastro</p></a
-              >
-            </td>
-            <td>
-              <p>
-                Criei esse projeto para ser uma fonte de cadastro para empresas
-                no geral. O cliente pode cadastrar todos os seus dados e esses
-                ficam armazenados no banco de dados da empresa, assim quando a
-                empresa precisar acessar os dados, já estarão salvos.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <p>Jogo do Número Secreto</p>
-              <video width="400" height="250" controls>
-                <source src="./assets/jogo.mp4" type="video/mp4" />
-              </video>
-              <a href="https://github.com/GuiAlbqrqe/Jogo-do-numero-secreto"
-                ><p>Link do Jogo</p></a
-              >
-            </td>
-            <td>
-              <p>
-                Esse é um projeto de um jogo onde o número secreto deve ser
-                adivinhado. Há 100 possibilidades de acerto, proporcionando
-                diversão e competição entre os jogadores.
-              </p>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <hr />
+
+    <main class="page">
+      <section class="card page-intro reveal">
+        <p class="eyebrow">Portfólio Técnico</p>
+        <h1>Projetos de automação</h1>
+        <p>
+          Esta seleção reúne projetos com foco em automação de testes,
+          validação de fluxos críticos e ganho de confiabilidade nas entregas.
+        </p>
+      </section>
+
+      <section class="project-grid reveal delay-1">
+        <article class="card project-card">
+          <h2>Cypress</h2>
+          <p>
+            Projeto principal para evidenciar domínio em testes E2E com
+            Cypress, cobrindo fluxos de ponta a ponta e regressão de interface.
+          </p>
+          <div class="tags">
+            <span>JavaScript</span>
+            <span>Cypress</span>
+            <span>Teste E2E</span>
+          </div>
+          <h3>Resultados de QA</h3>
+          <ul class="qa-results">
+            <li>Automação de fluxos críticos de interface.</li>
+            <li>Base para suíte de regressão em cada entrega.</li>
+            <li>Aumento da confiabilidade em cenários ponta a ponta.</li>
+          </ul>
+          <p class="evidence-title">Evidências</p>
+          <div class="evidence-links">
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Cypress"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Cypress/commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Commits</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Cypress/actions"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Actions</a
+            >
+          </div>
+          <a
+            class="link-projeto"
+            href="https://github.com/GuiAlbqrqe/Cypress"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Acessar repositório</a
+          >
+        </article>
+
+        <article class="card project-card">
+          <h2>pytestcid</h2>
+          <p>
+            Repositório focado em testes automatizados com Python, ideal para
+            demonstrar estrutura de cenários, asserts e confiabilidade.
+          </p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Pytest</span>
+            <span>Automação</span>
+          </div>
+          <h3>Resultados de QA</h3>
+          <ul class="qa-results">
+            <li>Estrutura de testes unitários e funcionais com Pytest.</li>
+            <li>Validação de regras com asserts objetivos.</li>
+            <li>Melhor manutenção e rastreabilidade de falhas.</li>
+          </ul>
+          <p class="evidence-title">Evidências</p>
+          <div class="evidence-links">
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/pytestcid"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/pytestcid/commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Commits</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/pytestcid/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Issues</a
+            >
+          </div>
+          <a
+            class="link-projeto"
+            href="https://github.com/GuiAlbqrqe/pytestcid"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Acessar repositório</a
+          >
+        </article>
+
+        <article class="card project-card">
+          <h2>Automacao-Whatsapp-Selenium-python</h2>
+          <p>
+            Projeto de automação de fluxo com Selenium para demonstrar execução
+            de ações repetitivas, estabilidade e validação de comportamento.
+          </p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Selenium</span>
+            <span>UI Testing</span>
+          </div>
+          <h3>Resultados de QA</h3>
+          <ul class="qa-results">
+            <li>Automação de tarefas repetitivas em interface web.</li>
+            <li>Validação de comportamento com WebDriver.</li>
+            <li>Reprodução consistente de cenários de regressão.</li>
+          </ul>
+          <p class="evidence-title">Evidências</p>
+          <div class="evidence-links">
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Automacao-Whatsapp-Selenium-python"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Automacao-Whatsapp-Selenium-python/commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Commits</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Automacao-Whatsapp-Selenium-python/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Issues</a
+            >
+          </div>
+          <a
+            class="link-projeto"
+            href="https://github.com/GuiAlbqrqe/Automacao-Whatsapp-Selenium-python"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Acessar repositório</a
+          >
+        </article>
+
+        <article class="card project-card">
+          <h2>cypress-bootcamp-qaturbo</h2>
+          <p>
+            Projeto complementar de Cypress para reforçar boas práticas de
+            automação E2E, organização de testes e manutenção de suíte.
+          </p>
+          <div class="tags">
+            <span>JavaScript</span>
+            <span>Cypress</span>
+            <span>Boas Práticas</span>
+          </div>
+          <h3>Resultados de QA</h3>
+          <ul class="qa-results">
+            <li>Organização de suíte E2E por fluxo de negócio.</li>
+            <li>Padronização de cenários e maior legibilidade.</li>
+            <li>Execução mais previsível de regressão.</li>
+          </ul>
+          <p class="evidence-title">Evidências</p>
+          <div class="evidence-links">
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/cypress-bootcamp-qaturbo"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/cypress-bootcamp-gatubo/commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Commits</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/cypress-bootcamp-gatubo/actions"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Actions</a
+            >
+          </div>
+          <a
+            class="link-projeto"
+            href="https://github.com/GuiAlbqrqe/cypress-bootcamp-gatubo"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Acessar repositório</a
+          >
+        </article>
+
+        <article class="card project-card">
+          <h2>API-Payments-Pix</h2>
+          <p>
+            Projeto orientado a API que fortalece seu portfólio em validação de
+            integrações, regras de negócio e fluxos de pagamento.
+          </p>
+          <div class="tags">
+            <span>API</span>
+            <span>Python</span>
+            <span>Teste Funcional</span>
+          </div>
+          <h3>Resultados de QA</h3>
+          <ul class="qa-results">
+            <li>Validação de integrações e respostas de API.</li>
+            <li>Cobertura de cenários de pagamento e exceções.</li>
+            <li>Foco em estabilidade de regras de negócio.</li>
+          </ul>
+          <p class="evidence-title">Evidências</p>
+          <div class="evidence-links">
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/API-Payments-Pix"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/API-Payments-Pix/commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Commits</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/API-Payments-Pix/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Issues</a
+            >
+          </div>
+          <a
+            class="link-projeto"
+            href="https://github.com/GuiAlbqrqe/API-Payments-Pix"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Acessar repositório</a
+          >
+        </article>
+
+        <article class="card project-card">
+          <h2>sample-flask-auth</h2>
+          <p>
+            Aplicação de autenticação útil para demonstrar testes de login,
+            autorização e cenários de segurança em fluxos críticos.
+          </p>
+          <div class="tags">
+            <span>Flask</span>
+            <span>Autenticação</span>
+            <span>QA de Segurança</span>
+          </div>
+          <h3>Resultados de QA</h3>
+          <ul class="qa-results">
+            <li>Validação de login, sessão e autorização.</li>
+            <li>Cobertura de cenários de acesso inválido.</li>
+            <li>Foco em risco e segurança de fluxo crítico.</li>
+          </ul>
+          <p class="evidence-title">Evidências</p>
+          <div class="evidence-links">
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/sample-flask-auth"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/sample-flask-auth/commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Commits</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/sample-flask-auth/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Issues</a
+            >
+          </div>
+          <a
+            class="link-projeto"
+            href="https://github.com/GuiAlbqrqe/sample-flask-auth"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Acessar repositório</a
+          >
+        </article>
+
+        <article class="card project-card">
+          <h2>Cadastro-Cliente-Streamlit</h2>
+          <p>
+            Projeto com regras de cadastro, ideal para mostrar criação de massa
+            de teste, validação de campos e verificação de persistência.
+          </p>
+          <div class="tags">
+            <span>Streamlit</span>
+            <span>Python</span>
+            <span>Validação de Dados</span>
+          </div>
+          <h3>Resultados de QA</h3>
+          <ul class="qa-results">
+            <li>Validação de campos obrigatórios e consistência de dados.</li>
+            <li>Verificação de persistência e integridade de cadastro.</li>
+            <li>Apoio na criação de massa para testes manuais.</li>
+          </ul>
+          <p class="evidence-title">Evidências</p>
+          <div class="evidence-links">
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Cadastro-Cliente-Streamlit"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Cadastro-Cliente-Streamlit/commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Commits</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Cadastro-Cliente-Streamlit/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Issues</a
+            >
+          </div>
+          <a
+            class="link-projeto"
+            href="https://github.com/GuiAlbqrqe/Cadastro-Cliente-Streamlit"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Acessar repositório</a
+          >
+        </article>
+
+        <article class="card project-card">
+          <h2>Jogo-do-numero-secreto</h2>
+          <p>
+            Projeto para demonstrar construção e execução de cenários de teste
+            funcionais em interfaces web com regras simples e objetivas.
+          </p>
+          <div class="tags">
+            <span>JavaScript</span>
+            <span>Front-end</span>
+            <span>Teste Funcional</span>
+          </div>
+          <h3>Resultados de QA</h3>
+          <ul class="qa-results">
+            <li>Definição de cenários funcionais de entrada e saída.</li>
+            <li>Validação de comportamento com regras simples.</li>
+            <li>Prática de análise de risco em fluxo front-end.</li>
+          </ul>
+          <p class="evidence-title">Evidências</p>
+          <div class="evidence-links">
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Jogo-do-numero-secreto"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Jogo-do-numero-secreto/commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Commits</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Jogo-do-numero-secreto/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Issues</a
+            >
+          </div>
+          <a
+            class="link-projeto"
+            href="https://github.com/GuiAlbqrqe/Jogo-do-numero-secreto"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Acessar repositório</a
+          >
+        </article>
+
+        <article class="card project-card">
+          <h2>Tests</h2>
+          <p>
+            Repositório dedicado a práticas de testes automatizados para
+            demonstrar evolução na criação de cenários, organização e execução
+            de testes.
+          </p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Testes Automatizados</span>
+            <span>QA</span>
+          </div>
+          <h3>Resultados de QA</h3>
+          <ul class="qa-results">
+            <li>Consolidação de práticas de automação em diferentes cenários.</li>
+            <li>Melhor padronização de casos de teste.</li>
+            <li>Base para ampliação de cobertura.</li>
+          </ul>
+          <p class="evidence-title">Evidências</p>
+          <div class="evidence-links">
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Tests"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Tests/commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Commits</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Tests/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Issues</a
+            >
+          </div>
+          <a
+            class="link-projeto"
+            href="https://github.com/GuiAlbqrqe/Tests"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Acessar repositório</a
+          >
+        </article>
+
+        <article class="card project-card">
+          <h2>IA-API-with-CREWAI</h2>
+          <p>
+            Projeto com integração de API e automação de fluxo orientado por
+            IA, reforçando validação de respostas e orquestração de processos.
+          </p>
+          <div class="tags">
+            <span>Python</span>
+            <span>API</span>
+            <span>Automação</span>
+          </div>
+          <h3>Resultados de QA</h3>
+          <ul class="qa-results">
+            <li>Validação de respostas e contratos de API.</li>
+            <li>Automação de fluxo com múltiplas etapas.</li>
+            <li>Apoio na previsibilidade de integrações.</li>
+          </ul>
+          <p class="evidence-title">Evidências</p>
+          <div class="evidence-links">
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/IA-API-with-CREWAI"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/IA-API-with-CREWAI/commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Commits</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/IA-API-with-CREWAI/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Issues</a
+            >
+          </div>
+          <a
+            class="link-projeto"
+            href="https://github.com/GuiAlbqrqe/IA-API-with-CREWAI"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Acessar repositório</a
+          >
+        </article>
+
+        <article class="card project-card">
+          <h2>Streamlit-Project</h2>
+          <p>
+            Projeto em Streamlit usado como base para validações funcionais,
+            automação de cenários e evolução de testes de interface.
+          </p>
+          <div class="tags">
+            <span>Python</span>
+            <span>Streamlit</span>
+            <span>Automação Funcional</span>
+          </div>
+          <h3>Resultados de QA</h3>
+          <ul class="qa-results">
+            <li>Estrutura favorável para regressão funcional.</li>
+            <li>Apoio em validações de regras de negócio.</li>
+            <li>Base para aumento de cobertura de testes.</li>
+          </ul>
+          <p class="evidence-title">Evidências</p>
+          <div class="evidence-links">
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Streamlit-Project"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Streamlit-Project/commits"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Commits</a
+            >
+            <a
+              class="link-projeto"
+              href="https://github.com/GuiAlbqrqe/Streamlit-Project/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Issues</a
+            >
+          </div>
+          <a
+            class="link-projeto"
+            href="https://github.com/GuiAlbqrqe/Streamlit-Project"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Acessar repositório</a
+          >
+        </article>
+      </section>
     </main>
-    <footer>
-      <p>Todos os direitos reservados!</p>
+
+    <footer class="site-footer">
+      <p>Todos os direitos reservados.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
